@@ -16,5 +16,5 @@ if you want to add more sorting file types. You can reffer to the code of os.py 
 
 
 ### Future changes
-* To sort the files you need to manually run the code 
+* To sort the files you need to manually run the code. Hopefully in the next version will have that
 
