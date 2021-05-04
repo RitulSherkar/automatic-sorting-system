@@ -15,6 +15,8 @@ dirpdf = 'D:/Organiser/pdf'
 dirtorrent = 'D:/Organiser/torrent'
 dirzip = 'D:/Organiser/zip'
 dirmp3 = 'D:/Organiser/music'
+dirphotos = 'D:/Organiser/photos'
+dirmiscellaneous = 'D:/Organiser/miscellaneous '
 
 if not os.path.exists(dir):
     os.mkdir(dir)
@@ -34,6 +36,12 @@ if not os.path.exists(dirzip):
 if not os.path.exists(dirmp3):
     os.mkdir(dirmp3)
     print('music path created')
+if not os.path.exists(dirphotos):
+    os.mkdir(dirphotos)
+    print('photos path created')
+if not os.path.exists(dirmiscellaneous):
+    os.mkdir(dirmiscellaneous)
+    print('miscellaneous path created')
 else:
     print ('all directorys are already created')
 
@@ -62,6 +70,23 @@ for i in l:
         shutil.move(currfile , dirmp3)
         print('moved mp3')
         filesmoved = filesmoved + 1
+    if ext == 'rar':
+        shutil.move(currfile , dirzip)
+        print('moved zip')
+        filesmoved = filesmoved + 1
+    if ext == 'jpg':
+        shutil.move(currfile , dirphotos)
+        print('moved photos')
+        filesmoved = filesmoved + 1
+    if ext == 'PNG':
+        shutil.move(currfile , dirphotos)
+        print('moved photo')
+        filesmoved = filesmoved + 1
+    # else:
+    #     shutil.move(currfile , dirmiscellaneous)
+    #     print('moved miscellaneous')
+    #     filesmoved = filesmoved + 1
     
 
 print ('Total files moved :' ,filesmoved)
+
