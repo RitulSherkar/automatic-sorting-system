@@ -8,7 +8,9 @@ path1 = path + '/'
 
 
 l = os.listdir(path)
-
+#STEP-1
+# this is ths list of all the directorys you want to sort the item to 
+# if you want to add more sorting folder then make a new variable containg the directory of the folder
 dir = 'D:\Organiser'
 direxe = 'D:/Organiser/exe'
 dirpdf = 'D:/Organiser/pdf'
@@ -17,10 +19,11 @@ dirzip = 'D:/Organiser/zip'
 dirmp3 = 'D:/Organiser/music'
 dirphotos = 'D:/Organiser/photos'
 dirmiscellaneous = 'D:/Organiser/miscellaneous '
-
+#STEP-2
+#then to make the directory need just copy past this if statement and change the "dir" to the new variable you created in the first step
 if not os.path.exists(dir):
     os.mkdir(dir)
-    print('organiser creted')
+    print('organiser created')
 if not os.path.exists(direxe):
     os.mkdir(direxe)
     print('exe path created')
@@ -82,6 +85,8 @@ for i in l:
         shutil.move(currfile , dirphotos)
         print('moved photo')
         filesmoved = filesmoved + 1
+#STEP-3 
+#Copy past this if statement changing "ext == 'whatever file eextention you want'" and the secound variable in the shutil.move statement to the variable you created in step 1
     else:
          shutil.move(currfile , dirmiscellaneous)
          print('moved miscellaneous')
