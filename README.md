@@ -8,13 +8,13 @@ If you wish to change the sorting directory change the "path" variable on line 6
 
 ### Warnings
 IF YOUR MACHINE DOES NOT HAVE A D DRIVE THE CODE WONT WORK.
-To change the sorting directory change the "path" variable on line 6 of 'os.py'
+To change the sorting directory change the "path" variable on line 6 of 'os.py'.
 
 
 ### Changes
-if you want to add more sorting file types. You can reffer to the code of os.py as there are steps written how to add them
+if you want to add more sorting file types. You can reffer to the code of os.py as there are steps written how to add them.
 
 
 ### Future changes
-* To sort the files you need to manually run the code. Hopefully in the next version will have that
+* To sort the files you need to manually run the code I am planning to make it a backgroung process.
 
