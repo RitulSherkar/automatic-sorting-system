@@ -3,7 +3,7 @@ You need to install python
 
 ## How to run the file
 By default this code will sort your downloades folder in exe ,music ,pdf ,photos ,torrent ,zip.
-The code will create directorys according to files sorted on the D drive.
+The code will create directories according to files sorted on the D drive.
 If you wish to change the sorting directory change the "path" variable on line 6
 
 ## Warnings
