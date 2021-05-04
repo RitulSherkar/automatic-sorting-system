@@ -1,3 +1,12 @@
-# automatic-sorting-system
-This code will sort mp3's ,pdf's ,zip's etc. By default it will sort your downloades foleder and create folders that are required on the D drive. 
-if you want to change the sorting directory put the the required directory is the "path" variable on line 6  
+# Befor you start
+You need to install python
+
+## How to run the file
+
+
+By default this code will sort your downloades folder in exe ,music ,pdf ,photos ,torrent ,zip.
+The code will create directorys according to files sorted on the D drive.
+If you wish to change the sorting directory change the "path" variable on line 6
+
+
+IF YOUR MACHIN DOES NOT HAVE A D DRIVE THE CODE WONT WORK.
