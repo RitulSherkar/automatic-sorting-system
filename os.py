@@ -86,7 +86,7 @@ for i in l:
         print('moved photo')
         filesmoved = filesmoved + 1
 #STEP-3 
-#Copy past this if statement changing "ext == 'whatever file eextention you want'" and the secound variable in the shutil.move statement to the variable you created in step 1
+#Copy past this if statement changing "ext == 'extention name'" and the secound variable in the shutil.move statement to the variable you created in step 1
     else:
          shutil.move(currfile , dirmiscellaneous)
          print('moved miscellaneous')
