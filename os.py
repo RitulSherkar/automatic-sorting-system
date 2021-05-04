@@ -82,10 +82,10 @@ for i in l:
         shutil.move(currfile , dirphotos)
         print('moved photo')
         filesmoved = filesmoved + 1
-    # else:
-    #     shutil.move(currfile , dirmiscellaneous)
-    #     print('moved miscellaneous')
-    #     filesmoved = filesmoved + 1
+    else:
+         shutil.move(currfile , dirmiscellaneous)
+         print('moved miscellaneous')
+         filesmoved = filesmoved + 1
     
 
 print ('Total files moved :' ,filesmoved)
