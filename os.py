@@ -14,15 +14,12 @@ if not os.path.exists(dir):
 	print('Made the main folder')
 
 
+
 for i in l:
-	ext = i.split('.')
 	currfile = filePath + i
-	if len(ext) == 2:
-		if len(ext) >= 3:
-			x = len(ext) - 1
-			ext = ext[x]
-		else:
-			ext = ext[1]
+	if os.path.isfile(currfile) == True:
+		ext1 = i.split('.')
+		ext = ext1[len(ext1) -1]
 		if ext in sorter:
 			if not os.path.exists(dir  + ext):
 				os.mkdir((dir + ext))
